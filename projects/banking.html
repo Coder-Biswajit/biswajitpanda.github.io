@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking Management System — Biswajit Panda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="project-layout.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-bar"></div>
+
+  <nav id="navbar">
+    <a href="../index.html" class="nav-logo">BP.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Journey</a></li>
+    </ul>
+    <a href="../index.html" class="nav-back">← Back to Portfolio</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-hero-badge">🏦 Banking & Finance · SQL Analytics</div>
+    <h1>Banking<br><span class="grad-text">Management System</span></h1>
+    <p class="proj-hero-desc">A backend-focused banking application with full account management, transaction processing, SQL-based analytics, and Power BI reporting — built on Python and MySQL.</p>
+    <div class="proj-meta-row">
+      <div class="proj-meta-chip">🗓️ <span>2025–26</span></div>
+      <div class="proj-meta-chip">✅ <span>Completed</span></div>
+      <div class="proj-meta-chip">🗄️ <span>Python · MySQL</span></div>
+      <div class="proj-meta-chip">📊 <span>Power BI</span></div>
+    </div>
+    <div class="proj-visual-hero reveal" style="background:linear-gradient(135deg,#001020,#002040,#001530);">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(99,102,241,.28),transparent 60%);"></div>
+      <span style="font-size:6rem;z-index:1;">🏦</span>
+    </div>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Overview</div>
+      <p>The Banking Management System is a <em>backend-focused application</em> simulating core banking operations — account creation, deposits and withdrawals, fund transfers, and loan management. Designed for both customers and admins with role-based access control and data validation at every layer.</p>
+      <p>The project prioritizes <em>data integrity and security</em>: every transaction is validated, authenticated, and logged. Analytics reports were generated using SQL and exported via Pandas, then visualized in Power BI dashboards for executive-level summaries.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Features</div>
+      <div class="proj-highlights">
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🔐</div>
+          <div class="phc-title">Secure Authentication</div>
+          <div class="phc-desc">Customer and admin login with data validation, password handling, and access control for sensitive operations.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🗄️</div>
+          <div class="phc-title">Relational Database Design</div>
+          <div class="phc-desc">Fully normalized MySQL schema covering accounts, loans, branches, transactions, and customer records.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">📋</div>
+          <div class="phc-title">SQL Analytics Reports</div>
+          <div class="phc-desc">Complex queries with JOIN, GROUP BY, and aggregates to surface insights on loan performance and transaction trends.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">📊</div>
+          <div class="phc-title">Power BI Dashboards</div>
+          <div class="phc-desc">Exported data via Pandas into Power BI — visual summaries of branch performance, customer segments, and loan status.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Technical Approach</div>
+      <p>The application is built entirely in <em>Python</em>, with a CLI interface connecting to a <em>MySQL</em> relational database via the mysql-connector-python library. Each entity — customers, accounts, loans, branches — is modeled as a normalized table with proper <em>primary and foreign key constraints</em>.</p>
+      <p>Transaction processing uses parameterized SQL queries to prevent injection attacks. Analytics queries use <em>window functions, GROUP BY, and HAVING clauses</em> to compute branch-wise summaries and loan performance metrics. Output data is exported through <em>Pandas DataFrames</em> for further Power BI visualization.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Tech Stack</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">MySQL</span>
+        <span class="tech-pill">Pandas</span>
+        <span class="tech-pill">Power BI</span>
+        <span class="tech-pill">mysql-connector</span>
+        <span class="tech-pill">SQL Queries</span>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Outcomes</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <span class="result-num">5+</span>
+          <span class="result-label">Relational Tables</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">CRUD</span>
+          <span class="result-label">Full Operations</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">BI</span>
+          <span class="result-label">Executive Dashboard</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Learnings</div>
+      <p>This project gave me deep hands-on experience with <em>relational database design principles</em> — normalization, referential integrity, and query optimization. Writing complex multi-table queries to surface analytics forced me to think about data structure before writing a single line of Python.</p>
+      <p>Exporting to Power BI showed me how the same underlying data can tell very different stories depending on how it's presented — and why the last mile of <em>communication matters as much as the analysis itself</em>.</p>
+    </div>
+
+  </div>
+
+  <div class="back-cta">
+    <p>Interested in more of my work?</p>
+    <a href="../index.html#projects" class="btn-primary">← View All Projects</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>Designed & built by <strong>Biswajit Panda</strong> · Data Analyst · 2026</p>
+  </footer>
+
+  <script src="../js/shared.js"></script>
+</body>
+</html>

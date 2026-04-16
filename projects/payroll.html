@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Payroll System — Biswajit Panda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="project-layout.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-bar"></div>
+
+  <nav id="navbar">
+    <a href="../index.html" class="nav-logo">BP.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Journey</a></li>
+    </ul>
+    <a href="../index.html" class="nav-back">← Back to Portfolio</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-hero-badge">💰 HR Analytics · MySQL · Power BI</div>
+    <h1>Employee<br><span class="grad-text">Payroll System</span></h1>
+    <p class="proj-hero-desc">A normalized payroll management system with complex SQL analytics for salary computation, deduction tracking, and department-wise cost distribution — visualized in Power BI.</p>
+    <div class="proj-meta-row">
+      <div class="proj-meta-chip">🗓️ <span>2025–26</span></div>
+      <div class="proj-meta-chip">✅ <span>Completed</span></div>
+      <div class="proj-meta-chip">🗄️ <span>Python · MySQL</span></div>
+      <div class="proj-meta-chip">📊 <span>Power BI</span></div>
+    </div>
+    <div class="proj-visual-hero reveal" style="background:linear-gradient(135deg,#001a10,#002e1e,#001510);">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 55% 40%,rgba(16,185,129,.28),transparent 60%);"></div>
+      <span style="font-size:6rem;z-index:1;">💰</span>
+    </div>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Overview</div>
+      <p>The Employee Payroll System is a <em>data-first HR solution</em> that handles the full payroll lifecycle — from employee records and attendance to salary computation with overtime, bonuses, and deductions. The focus was on building a <em>robust, normalized database</em> that could support complex analytical queries without redundancy.</p>
+      <p>Beyond operations, the system surfaces department-wise payroll insights and cost distribution analytics, helping HR teams understand where salary budget is allocated and identify anomalies in compensation data.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Features</div>
+      <div class="proj-highlights">
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🗄️</div>
+          <div class="phc-title">Normalized Schema</div>
+          <div class="phc-desc">Fully normalized MySQL database with primary keys, foreign keys, and constraints across employees, departments, payroll, and deductions tables.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🧮</div>
+          <div class="phc-title">Salary Computation</div>
+          <div class="phc-desc">Automated calculation of base salary, overtime pay, performance bonuses, tax deductions, and net take-home with validated data handling.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🏢</div>
+          <div class="phc-title">Department Analytics</div>
+          <div class="phc-desc">Complex SQL with JOIN, GROUP BY, and HAVING to compute department-wise payroll totals, averages, and outlier detection.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">📊</div>
+          <div class="phc-title">Power BI Cost Dashboard</div>
+          <div class="phc-desc">Visual cost distribution breakdown by department, role tier, and pay component — enabling executive-level HR decisions.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Technical Approach</div>
+      <p>The database was designed following <em>third normal form (3NF)</em> — eliminating transitive dependencies to ensure that payroll data remains consistent even as employee records change. Salary component logic (overtime multipliers, deduction brackets) is implemented as <em>Python-computed values</em> written back to the database, keeping business logic cleanly separated from storage.</p>
+      <p>Analytics queries use <em>aggregate functions with conditional logic</em> — CASE statements inside SUM to compute department cost by salary tier. Power BI connects directly to the MySQL database and refreshes dashboards from live data, providing a real-time view of the organization's payroll posture.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Tech Stack</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">MySQL</span>
+        <span class="tech-pill">Power BI</span>
+        <span class="tech-pill">SQL (JOIN, GROUP BY, HAVING)</span>
+        <span class="tech-pill">Stored Calculations</span>
+        <span class="tech-pill">Data Validation</span>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Outcomes</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <span class="result-num">3NF</span>
+          <span class="result-label">Normalized Schema</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">Auto</span>
+          <span class="result-label">Payroll Computation</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">Dept</span>
+          <span class="result-label">Cost Distribution</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Learnings</div>
+      <p>Building this system taught me that <em>data modeling is the most critical phase</em> of any database project — poor schema design creates analytical debt that compounds over time. Spending extra time on normalization upfront made every subsequent query simpler and more reliable.</p>
+      <p>Working with payroll data also introduced me to the complexity of <em>financial calculations in software</em> — edge cases like partial months, retroactive adjustments, and rounding rules that seem simple on paper but require careful implementation in code.</p>
+    </div>
+
+  </div>
+
+  <div class="back-cta">
+    <p>Interested in more of my work?</p>
+    <a href="../index.html#projects" class="btn-primary">← View All Projects</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>Designed & built by <strong>Biswajit Panda</strong> · Data Analyst · 2026</p>
+  </footer>
+
+  <script src="../js/shared.js"></script>
+</body>
+</html>

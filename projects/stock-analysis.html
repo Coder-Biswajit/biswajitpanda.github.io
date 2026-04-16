@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market Dashboard — Biswajit Panda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="project-layout.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-bar"></div>
+
+  <nav id="navbar">
+    <a href="../index.html" class="nav-logo">BP.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Journey</a></li>
+    </ul>
+    <a href="../index.html" class="nav-back">← Back to Portfolio</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-hero-badge">📈 Live Deployment · Finance</div>
+    <h1>Stock Market<br><span class="grad-text">Analysis Dashboard</span></h1>
+    <p class="proj-hero-desc">A live web application that fetches real-time stock market data, computes analytics, and renders interactive visualizations to support investment decision-making — deployed on Render.</p>
+    <div class="proj-meta-row">
+      <div class="proj-meta-chip">🗓️ <span>2025–26</span></div>
+      <div class="proj-meta-chip">🌐 <span>Live on Render</span></div>
+      <div class="proj-meta-chip">🐍 <span>Python · Flask</span></div>
+      <div class="proj-meta-chip">📊 <span>Real-Time Data</span></div>
+    </div>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:52px;">
+      <a href="https://stock-analysis-ufbl.onrender.com/" target="_blank" class="btn-primary">🌐 View Live App →</a>
+    </div>
+    <div class="proj-visual-hero reveal" style="background:linear-gradient(135deg,#001520,#002a40,#001030);">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(14,165,233,.25),transparent 55%),radial-gradient(ellipse at 75% 30%,rgba(16,185,129,.2),transparent 50%);"></div>
+      <span style="font-size:6rem;z-index:1;">📈</span>
+    </div>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Overview</div>
+      <p>The Stock Market Analysis Dashboard is a <em>live, deployed web application</em> that enables users to explore stock price movements, trends, and key financial metrics through an interactive interface. It bridges the gap between raw financial data and actionable investment insight.</p>
+      <p>Unlike static analysis notebooks, this is a production web app accessible from any browser — no setup required. Data is fetched dynamically, processed using Python analytics libraries, and visualized in an intuitive dashboard layout.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Features</div>
+      <div class="proj-highlights">
+        <div class="proj-highlight-card">
+          <div class="phc-icon">📡</div>
+          <div class="phc-title">Real-Time Data Fetching</div>
+          <div class="phc-desc">Dynamically retrieves live stock market data, keeping the dashboard current without manual updates.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">📊</div>
+          <div class="phc-title">Interactive Visualizations</div>
+          <div class="phc-desc">Charts built with Matplotlib rendered via Flask routes — showing price trends, volume, and moving averages.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🧮</div>
+          <div class="phc-title">Analytics & Metrics</div>
+          <div class="phc-desc">Computes key indicators like percentage change, high/low ranges, and trend summaries for selected tickers.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🌐</div>
+          <div class="phc-title">Deployed on Render</div>
+          <div class="phc-desc">Production deployment using Render — accessible live with zero local setup for end users.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Technical Approach</div>
+      <p>The backend is built with <em>Python Flask</em>, handling routing and data processing logic. Stock data is retrieved using a market data API and processed via <em>Pandas</em> for cleaning and computation. Visualizations are generated with <em>Matplotlib</em> and served as dynamic images through Flask endpoints.</p>
+      <p>The frontend is a clean, responsive HTML/CSS interface connected to Flask templating — ensuring the analysis is consumable by non-technical users without any chart configuration on their end.</p>
+      <p>Deployment to <em>Render</em> was configured with a requirements.txt and Gunicorn WSGI server — making this a fully production-grade web service, not just a development app.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Tech Stack</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Flask</span>
+        <span class="tech-pill">Pandas</span>
+        <span class="tech-pill">Matplotlib</span>
+        <span class="tech-pill">Render</span>
+        <span class="tech-pill">Gunicorn</span>
+        <span class="tech-pill">HTML/CSS</span>
+        <span class="tech-pill">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Outcomes</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <span class="result-num">Live</span>
+          <span class="result-label">Production Deployment</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">Real-Time</span>
+          <span class="result-label">Market Data</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">0</span>
+          <span class="result-label">Setup Required</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Learnings</div>
+      <p>This project sharpened my understanding of <em>web application architecture</em> — how data flows from an API, through processing, into a user-facing interface. Deploying to Render taught me the full production pipeline: environment variables, dependencies, WSGI configuration, and keeping services alive.</p>
+      <p>Working with financial data also reinforced the importance of <em>data reliability</em> — handling API failures gracefully, validating ticker symbols, and communicating clearly when data is unavailable.</p>
+    </div>
+
+  </div>
+
+  <div class="back-cta">
+    <p>Interested in more of my work?</p>
+    <a href="../index.html#projects" class="btn-primary">← View All Projects</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>Designed & built by <strong>Biswajit Panda</strong> · Data Analyst · 2026</p>
+  </footer>
+
+  <script src="../js/shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Management — Biswajit Panda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="project-layout.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-bar"></div>
+
+  <nav id="navbar">
+    <a href="../index.html" class="nav-logo">BP.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Journey</a></li>
+    </ul>
+    <a href="../index.html" class="nav-back">← Back to Portfolio</a>
+  </nav>
+
+  <div class="proj-hero">
+    <div class="proj-hero-badge">🛍️ Retail Analytics · SQL · Power BI</div>
+    <h1>E-Commerce<br><span class="grad-text">Management System</span></h1>
+    <p class="proj-hero-desc">A backend e-commerce system with complete order management and SQL-driven analytics that identifies top products, high-value customers, and revenue trends — visualized in Power BI.</p>
+    <div class="proj-meta-row">
+      <div class="proj-meta-chip">🗓️ <span>2025–26</span></div>
+      <div class="proj-meta-chip">✅ <span>Completed</span></div>
+      <div class="proj-meta-chip">🗄️ <span>Python · MySQL</span></div>
+      <div class="proj-meta-chip">📊 <span>Power BI</span></div>
+    </div>
+    <div class="proj-visual-hero reveal" style="background:linear-gradient(135deg,#100010,#1e0030,#0d0020);">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 40% 50%,rgba(139,92,246,.28),transparent 60%);"></div>
+      <span style="font-size:6rem;z-index:1;">🛍️</span>
+    </div>
+  </div>
+
+  <div class="proj-content">
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Overview</div>
+      <p>The E-Commerce Management System is a <em>backend retail platform</em> handling products, customers, and orders — with a strong emphasis on SQL-driven analytics. The goal was not just to manage data, but to make it tell a business story: which products drive the most revenue, who the highest-value customers are, and where sales trends are heading.</p>
+      <p>The system combines <em>operational data management</em> (CRUD, relational structure) with <em>business intelligence</em> (daily/monthly reports, customer segmentation, product ranking) — bridging engineering and analytics in one project.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Features</div>
+      <div class="proj-highlights">
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🛒</div>
+          <div class="phc-title">Full Order Management</div>
+          <div class="phc-desc">Product catalog, customer records, and order processing — all managed through a relational MySQL schema with full CRUD operations.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">🏆</div>
+          <div class="phc-title">Top Product Analysis</div>
+          <div class="phc-desc">SQL queries identifying best-selling SKUs, revenue per category, and inventory movement patterns.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">👤</div>
+          <div class="phc-title">Customer Segmentation</div>
+          <div class="phc-desc">High-value customer identification using purchase frequency, order value, and recency analysis through SQL aggregates.</div>
+        </div>
+        <div class="proj-highlight-card">
+          <div class="phc-icon">📅</div>
+          <div class="phc-title">Daily & Monthly Reports</div>
+          <div class="phc-desc">Automated report generation via Python + Pandas, with Power BI dashboards visualizing revenue, order volume, and growth trends.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Technical Approach</div>
+      <p>The database schema was designed with <em>normalization in mind</em> — products, customers, orders, and order items as separate normalized tables connected by foreign keys. This structure enables efficient analytical queries without data redundancy.</p>
+      <p>Sales analysis queries use <em>multi-table JOINs with GROUP BY and HAVING</em> to rank products by revenue and segment customers by lifetime value. Output is piped through <em>Pandas</em> for date-range filtering and formatting, then loaded into Power BI for visual dashboards showing trends across daily and monthly granularities.</p>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Tech Stack</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">MySQL</span>
+        <span class="tech-pill">Pandas</span>
+        <span class="tech-pill">Power BI</span>
+        <span class="tech-pill">SQL Analytics</span>
+        <span class="tech-pill">Data Export</span>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Key Outcomes</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <span class="result-num">Top 10</span>
+          <span class="result-label">Products Identified</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">RFM</span>
+          <span class="result-label">Customer Segments</span>
+        </div>
+        <div class="result-card">
+          <span class="result-num">BI</span>
+          <span class="result-label">Revenue Dashboard</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-section reveal">
+      <div class="proj-section-title">Learnings</div>
+      <p>This project taught me to think like a business analyst, not just a developer. Writing queries to answer "who are our best customers?" required me to define what "best" means in data terms — and that definition shaped the entire analysis.</p>
+      <p>Working with <em>daily and monthly aggregations</em> also reinforced the importance of time-based thinking in data analysis — trends are invisible without the right temporal granularity, and choosing the wrong window can hide or distort patterns.</p>
+    </div>
+
+  </div>
+
+  <div class="back-cta">
+    <p>Interested in more of my work?</p>
+    <a href="../index.html#projects" class="btn-primary">← View All Projects</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>Designed & built by <strong>Biswajit Panda</strong> · Data Analyst · 2026</p>
+  </footer>
+
+  <script src="../js/shared.js"></script>
+</body>
+</html>
